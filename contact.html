@@ -66,6 +66,18 @@
          </header>
          <!-- End header -->
          <!-- section -->
+          <div class="section about_section layout_padding padding_top_0">
+            <div class="row">
+                  <div class="col-md-12">
+                     <div class="full">
+                        <div class="heading_main text_align_center margin-bottom_30">
+                           <h2>Entrez en contact</h2>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+         </div>
+         <!-- section -->
          <div class="section contact_section">
             <div class="container-fluid">
                <div class="row">
@@ -74,25 +86,31 @@
                         <div class="row">
                            <div class="col-sm-12 col-md-10 offset-lg-1">
                               <div class="full contact_form">
-                                 <form class="contact_form_inner" action="#">
-                                    <fieldset>
-                                       <div class="field">
-                                          <input type="text" name="name" placeholder="Nom" />
-                                       </div>
-                                       <div class="field">
-                                          <input type="email" name="email" placeholder="Email" />
-                                       </div>
-                                       <div class="field">
-                                          <input type="text" name="phone_no" placeholder="Numéro" />
-                                       </div>
-                                       <div class="field">
-                                          <textarea placeholder="Message"></textarea>
-                                       </div>
-                                       <div class="field center">
-                                          <button class="margin-top_30">ENVOYER</button>
-                                       </div>
-                                    </fieldset>
-                                 </form>
+                                 <form class="contact_form_inner" action="send_mail.php" method="POST">
+   <fieldset>
+
+      <div class="field">
+         <input type="text" name="name" placeholder="Nom" required>
+      </div>
+
+      <div class="field">
+         <input type="email" name="email" placeholder="Email" required>
+      </div>
+
+      <div class="field">
+         <input type="text" name="phone_no" placeholder="Numéro" required>
+      </div>
+
+      <div class="field">
+         <textarea name="message" placeholder="Message" required></textarea>
+      </div>
+
+      <div class="field center">
+         <button type="submit" class="margin-top_30">ENVOYER</button>
+      </div>
+
+   </fieldset>
+</form>
                               </div>
                            </div>
                         </div>
@@ -156,8 +174,8 @@
                      <div class="full footer_blog_last">
                          <p>Réseaux sociaux</p>
                          <p>
-                           <ul>
-                              <li><a href="https://web.facebook.com/profile.php?id=100083983136315"><i class="fa fa-facebook-f"></i></a></li>
+                            <ul>
+                              <li><a href="https://web.facebook.com/share/r/17LzC5jwnS/"><i class="fa fa-facebook-f"></i></a></li>
                               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                               <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
@@ -183,7 +201,7 @@
       </div>
       <a href="#" id="scroll-to-top" class="hvr-radial-out"><i class="fa fa-angle-up"></i></a>
       <!-- ALL JS FILES -->
-      <script src="js/jquery.min.js"></script>
+      <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.min.js"></script>
       <script src="js/popper.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <!-- ALL PLUGINS -->
@@ -206,10 +224,3 @@
            });
          });
       </script>
-      <!-- google map js -->
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap"></script>
-      <!-- end google map js -->
-   </body>
-</html>
-
-

@@ -5,12 +5,12 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <!-- Mobile Metas -->
-      <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <!-- Site Metas -->
-      <title>ANVA</title>
-      <meta name="keywords" content="">
-      <meta name="description" content="">
-      <meta name="author" content="">
+      <title>ANVA – Association Nouveau Visage pour l'Afrique</title>
+      <meta name="keywords" content="ANVA, ONG, Togo, Afrique, santé communautaire, éducation, eau, assainissement, paix, développement, agriculture">
+      <meta name="description" content="Association Nouveau Visage pour l'Afrique (ANVA) – ONG basée à Dapaong, Togo, œuvrant pour la santé, l'éducation, l'eau et la paix en Afrique.">
+      <meta name="author" content="ANVA">
       <!-- Site Icons -->
       <link rel="shortcut icon" href="#" type="image/x-icon" />
       <link rel="apple-touch-icon" href="#" />
@@ -30,8 +30,7 @@
       <![endif]-->
    </head>
 
-         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+
    <body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
       <!-- LOADER -->
       <div id="preloader">
@@ -44,10 +43,10 @@
       <nav id="sidebar">
          <div class="menu_section">
             <ul>
-               <li><a href="index.html">Maison</a></li>
-               <li><a href="about.html">A propos</a></li>
-               <li><a href="services.html">Services</a></li>
-               <li><a href="contact.html">Contactez-nous</a></li>
+               <li><a href="index.html" aria-label="Maison">Maison</a></li>
+               <li><a href="about.html" aria-label="À propos">A propos</a></li>
+               <li><a href="services.html" aria-label="Services">Services</a></li>
+               <li><a href="contact.html" aria-label="Contactez-nous">Contactez-nous</a></li>
             </ul>
          </div>
       </nav>
@@ -253,12 +252,12 @@
                   <div class="col-md-12 col-lg-8">
                      <div class="full">
                          <div class="form_section">
-                            <form class="news_submit_form">
+                            <form class="news_submit_form" action="send_email.php" method="POST">
                               <fieldset>
-                                 <div class="field">
-                                    <input type="email" placeholder="Enter url" name="#" required />
-                                    <button>Soumettre</button>
-                                 </div>
+   <div class="field">
+      <input type="email" placeholder="Entrer votre email" name="email" required>
+      <button type="submit">Soumettre</button>
+   </div>
                               </fieldset>
                             </form>
                          </div>
@@ -308,7 +307,7 @@
                           <img src="images/search_icon.png" alt="#" />
                       </div>
                    </div>
-                   <p>sensibilisation des élèves du lycée de Kara sur l'extrémisme violent et l'immigration clandestine</p>
+                   <p>Sensibilisation des élèves du lycée de Kara sur l'extrémisme violent et l'immigration clandestine</p>
                 </div>
                 <div class="col-sm-6 col-md-3 col-lg-3">
                    <div class="work_blog margin-top_30">
@@ -368,7 +367,7 @@
                   <div class="col-md-12">
                      <div class="full">
                         <div class="heading_main text_align_center margin-bottom_30">
-                           <h2>Entrer en contacte</h2>
+                           <h2>Entrez en contact</h2>
                         </div>
                      </div>
                   </div>
@@ -383,25 +382,31 @@
                         <div class="row">
                            <div class="col-sm-12 col-md-10 offset-lg-1">
                               <div class="full contact_form">
-                                 <form class="contact_form_inner" action="#">
-                                    <fieldset>
-                                       <div class="field">
-                                          <input type="text" name="name" placeholder="Nom" />
-                                       </div>
-                                       <div class="field">
-                                          <input type="email" name="email" placeholder="Email" />
-                                       </div>
-                                       <div class="field">
-                                          <input type="text" name="phone_no" placeholder="Numéro" />
-                                       </div>
-                                       <div class="field">
-                                          <textarea placeholder="Message"></textarea>
-                                       </div>
-                                       <div class="field center">
-                                          <button class="margin-top_30">ENVOYER</button>
-                                       </div>
-                                    </fieldset>
-                                 </form>
+                                 <form class="contact_form_inner" action="send_mail.php" method="POST">
+   <fieldset>
+
+      <div class="field">
+         <input type="text" name="name" placeholder="Nom" required>
+      </div>
+
+      <div class="field">
+         <input type="email" name="email" placeholder="Email" required>
+      </div>
+
+      <div class="field">
+         <input type="text" name="phone_no" placeholder="Numéro" required>
+      </div>
+
+      <div class="field">
+         <textarea name="message" placeholder="Message" required></textarea>
+      </div>
+
+      <div class="field center">
+         <button type="submit" class="margin-top_30">ENVOYER</button>
+      </div>
+
+   </fieldset>
+</form>
                               </div>
                            </div>
                         </div>
@@ -466,7 +471,7 @@
                          <p>Réseaux sociaux</p>
                          <p>
                             <ul>
-                              <li><a href="https://web.facebook.com/profile.php?id=100083983136315"><i class="fa fa-facebook-f"></i></a></li>
+                              <li><a href="https://web.facebook.com/share/r/17LzC5jwnS/"><i class="fa fa-facebook-f"></i></a></li>
                               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                               <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
@@ -484,7 +489,7 @@
             <div class="container">
                <div class="row">
                   <div class="col-12">
-                     <p class="crp">© Copyrights 2019 design by Bamazi14</p>
+                     <p class="crp">© Copyrights 2026 ANVA – Association Nouveau Visage pour l'Afrique</p>
                   </div>
                </div>
             </div>
@@ -492,7 +497,7 @@
       </div>
       <a href="#" id="scroll-to-top" class="hvr-radial-out"><i class="fa fa-angle-up"></i></a>
       <!-- ALL JS FILES -->
-      <script src="js/jquery.min.js"></script>
+      <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.min.js"></script>
       <script src="js/popper.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <!-- ALL PLUGINS -->
@@ -515,12 +520,3 @@
            });
          });
       </script>
-      <!-- google map js -->
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap" async defer></script>
-      <!-- end google map js -->
-   </body>
-</html>
-
-
-
-
